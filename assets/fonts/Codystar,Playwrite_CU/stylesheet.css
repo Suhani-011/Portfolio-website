@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Codystar';
+    src: url('Codystar-Light.woff2') format('woff2'),
+        url('Codystar-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Codystar';
+    src: url('Codystar.woff2') format('woff2'),
+        url('Codystar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playwrite CU';
+    src: url('PlaywriteCU-Regular.woff2') format('woff2'),
+        url('PlaywriteCU-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playwrite CU';
+    src: url('PlaywriteCU-ExtraLight.woff2') format('woff2'),
+        url('PlaywriteCU-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playwrite CU';
+    src: url('PlaywriteCU-Light.woff2') format('woff2'),
+        url('PlaywriteCU-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playwrite CU';
+    src: url('PlaywriteCU-Regular.woff2') format('woff2'),
+        url('PlaywriteCU-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playwrite CU';
+    src: url('PlaywriteCU-Thin.woff2') format('woff2'),
+        url('PlaywriteCU-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

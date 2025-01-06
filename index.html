@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suhani- Personal Portfolio & Resume</title>
+    <link rel="icon" href="./assets/images/logo.jpg">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font -->
+     <link rel="stylesheet" href="./assets/fonts/Syne/stylesheet.css">
+     <link rel="stylesheet" href="./assets/fonts/Codystar,Playwrite_CU/stylesheet.css">
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <!-- Style CSS -->  
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Media CSS -->
+     <link rel="stylesheet" href="./assets/css/media.css">
+</head>
+<body class="dark-theme" data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <!-- Custom Cursor -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+    <!-- Gradient background -->
+    <div class="gradient-background">
+        <div class="blur" style="translate: none; rotate: none; scale: none; transform: translate3d(13.138px, 139.101px, 0px) rotate(72.0072deg);"></div>
+        <div class="blur" style="translate: none; rotate: none; scale: none; transform: translate3d(354.228px, 173.889px, 0px) rotate(37.2947deg);"></div>
+        <div class="blur" style="translate: none; rotate: none; scale: none; transform: translate3d(-88.1557px, 196.357px, 0px) rotate(46.4995deg);"></div>
+    </div>
+    <!-- Avatar -->
+    <div class="avatar">
+        <div class="avatar-container d-flex flex-column rounded-5">
+            <div class="avatar-block">
+                <div class="avatar-logo d-flex align-items-center mb-3">
+                   <a href="./index.html">
+                    <div class=" logo_img">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="85px" height="85px" viewBox="0 0 85 85" style="enable-background:new 0 0 85 85;" xml:space="preserve" class="gradient-fill">
+                          <path class="gradient-fill" d="M51,0H34C15.2,0,0,15.2,0,34v17c0,14.3,8.9,26.6,21.4,31.6c0,0,0,0,0,0l0,0C25.3,84.1,29.5,85,34,85h17
+                            c6,0,11.7-1.6,16.6-4.3c0.1-0.1,0.2-0.1,0.3-0.2C78.1,74.6,85,63.6,85,51V34C85,15.2,69.8,0,51,0z M83,51c0,10.7-5.3,20.2-13.4,26
+                            v-2.5v-3.9h3.9v-3.9h-3.9v-3.9h3.9v-3.9h-3.9H67v-3.9V51h-3.9v3.9v3.9h2.6v3.9v3.9v3.9h-3.9h-3.9v3.9h3.9h3.9v3.9v1
+                            C61.3,81.7,56.3,83,51,83H34c-4.5,0-8.7-0.9-12.6-2.6v-2v-3.9h3.9h3.9v-3.9h-3.9h-3.9v-3.9v-3.9v-3.9H24v-3.9V51h-3.9v3.9v3.9h-2.6
+                            h-3.9v3.9h3.9v3.9h-3.9v3.9h3.9v3.9v3.9C8.2,72.8,2,62.6,2,51V34C2,16.4,16.4,2,34,2h17c17.6,0,32,14.4,32,32V51z M50.1,54.9H54
+                            v3.9v3.9h-3.9v-3.9V54.9z M33.1,54.9H37v3.9v3.9h-3.9v-3.9V54.9z M27.9,51H24v-3.9v-3.9v-3.9h3.9v3.9v3.9V51z M31.8,39.3h-3.9v-3.9
+                            h3.9V39.3z M31.8,43.2v-3.9h3.9v3.9H31.8z M63.1,47.1V51h-3.9v-3.9v-3.9v-3.9h3.9v3.9V47.1z M35.7,47.1v-3.9h3.9h3.9h3.9h3.9v3.9
+                            h-3.9h-3.9h-3.9H35.7z M59.2,39.3h-3.9v-3.9h3.9V39.3z M55.3,43.2h-3.9v-3.9h3.9V43.2z"></path>
+                        </svg>
+                    </div>
+                   </a>
+                    <div class=" logo_name ps-3 ">
+                        Suhani <br> Jain
+                    </div>
+                </div>
+                <div class="avatar_image">
+                    <img src="./assets/images/avatar.webp" alt="avatar" class="rounded-5 mt-1">
+                </div>
+            </div>
+            <div class="avatar-block mt-3">
+                <h5 class="course">
+                    <span class="course_val">Specialization:</span><br>
+                    <span>I am a <span id="changingText"></span></span>
+                </h5>
+            </div>
+            <div class="avatar-block mt-3 ">
+                <h5 class="course">
+                    <span class="course_val">Based in:</span>
+                    <br>
+                Surat, Gujarat</h5>
+            </div>
+            <div class="avatar-block mt-3 d-flex flex-wrap gap-4 align-items-center">
+                <h5 class="course"><span class="course_val">Socials:</span></h5>
+                <ul class="socials d-flex flex-wrap gap-4 ">
+                    <li class="social-item"><a href="https://www.linkedin.com/in/suhani-jain11092005/" class="social-link" target="_blank">
+                        <i class="ri-linkedin-line"></i>
+                    </a></li>
+                    <li class="social-item"><a href="https://github.com/Suhani-011" class="social-link" target="_blank">
+                        <i class="ri-github-fill"></i>
+                    </a></li>
+                    <li class="social-item"><a href="https://mail.google.com/mail/u/0/#inbox" class="social-link" target="_blank">
+                        <i class="ri-mail-line"></i>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="avatar-block mt-4">
+                <a href="#contact" class="avatar-btn control-links d-flex  justify-content-center align-items-center me-0">
+                    <div class="avatar-name">Let's Work Together !</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <main class=".main-container">
+        <!-- Header -->
+        <header class="d-flex justify-content-between align-items-center gap-2">
+            <div class="header-menus d-xl-block d-none">
+                <nav>
+                    <ul class="menu-list d-flex gap-3">
+                        <li class=" menu-item  d-flex justify-content-center align-items-center">
+                            <a href="#home" class="menu-link">
+                                <div class="menus-name d-xxl-block d-none">Home</div>
+                                <i class="bi bi-house d-xxl-none d-xl-block"></i>
+                            </a>
+                        </li>
+                        <li class=" menu-item  d-flex justify-content-center align-items-center">
+                            <a href="#portfolio" class="menu-link ">
+                                <div class="menus-name d-xxl-block d-none">Portfolio</div>
+                                <i class="bi bi-grid d-xxl-none d-xl-block"></i>
+                            </a>
+                        </li>
+                        <li class=" menu-item  d-flex justify-content-center align-items-center">
+                            <a href="#aboutme" class="menu-link ">
+                                <div class="menus-name d-xxl-block d-none">About me</div>
+                                <i class="bi bi-person d-xxl-none d-xl-block"></i>
+                            </a>
+                        </li>
+                        <li class=" menu-item  d-flex justify-content-center align-items-center">
+                            <a href="#resume" class="menu-link ">
+                                <div class="menus-name d-xxl-block d-none">Resume</div>
+                                <i class="bi bi-card-text d-xxl-none d-xl-block"></i>
+                            </a>
+                        </li>
+                        <li class=" menu-item  d-flex justify-content-center align-items-center">
+                            <a href="#contact" class="menu-link ">
+                                <div class="menus-name d-xxl-block d-none">Contact</div>
+                                <i class="bi bi-envelope d-xxl-none d-xl-block"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-controls d-xl-flex d-none">
+                <div class="theme control-links me-3 fw-bold d-xl-block d-none">
+                    <i class="bi bi-sun"></i>
+                </div>
+                <a href="#contact" class="control-btn control-links d-flex justify-content-center align-items-center">
+                    <div class="control-name pe-3 d-xxl-block d-none">Let's Talk</div>
+                    <i class="bi bi-chat-left-dots fw-bolder"></i>
+                </a>
+            </div>
+            <!-- scrollspy -->
+            <div id="navbar-example" class="scrollspy position-fixed ">
+                <ul class="nav nav-tabs menu-link scroll-link d-flex" role="tablist">
+                    <a href="#home">
+                        <li class="menu-spy">
+                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Menu">
+                                <i class="bi bi-house"></i>
+                            </button>
+                        </li>
+                        </a>
+                    <a href="#portfolio">
+                        <li class="menu-spy">
+                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Portfolio">
+                                    <i class="bi bi-grid"></i>
+                            </button>
+                        </li>
+                    </a>
+                    <a href="#aboutme">
+                        <li class="menu-spy">
+                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="About Me">
+                                <i class="bi bi-person"></i>
+                            </button>
+                        </li>
+                    </a>
+                    <a href="#resume">
+                        <li class="menu-spy">
+                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Resume">
+                                <i class="bi bi-card-text"></i>
+                            </button>
+                        </li>
+                    </a>
+                    <a href="#contact">
+                        <li class="menu-spy">
+                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Contact">
+                                <i class="bi bi-envelope"></i>
+                            </button>
+                        </li>
+                    </a>
+                    <a href="#testimonials">
+                        <li class="menu-spy">
+                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Testimonials">
+                                <i class="bi bi-star"></i>
+                            </button>
+                        </li>
+                    </a>
+                    <a href="#blog">
+                        <li class="menu-spy">
+                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Blog">
+                                <i class="bi bi-newspaper"></i>
+                            </button>
+                        </li>
+                    </a>
+                    <li class="menu-spy">
+                        <button type="button" class="btn scrollbtn theme themespy" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Theme Switch">
+                            <i class="bi bi-sun"></i>
+                        </button>
+                    </li>
+                    <a href="#contact">
+                        <li class="menu-spy menu-fix">
+                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Connect with me!">
+                                <i class="bi bi-chat-left-dots fw-bolder"></i>
+                            </button>
+                        </li>
+                    </a>
+                </ul>
+              </div>
+        </header>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="home-banner">
+                            <button class="section-title  d-flex flex-wrap  justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                                </svg>
+                                <span class="ms-2">Let's meet !</span>
+                            </button> 
+                            <h2 class="title-default fw-bold mt-4 " data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="1500">
+                                I'm Suhani Jain <br>
+                                Frontend Designer and Developer.
+                            </h2>  
+                            <div class="home-btn d-flex flex-wrap mt-5 align-items-center">
+                                <div class="btn-default me-3" data-aos="fade-up" data-aos-easing="linear"
+                                data-aos-duration="1500">
+                                    <a href="#portfolio" class="button-link"> 
+                                        My Works <i class="bi bi-grid ps-2"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-default cv-btn" data-aos="fade-up" data-aos-easing="linear"
+                                data-aos-duration="1500">
+                                    <a href="javascript:void(0)" class="button-link"> 
+                                        Download CV <i class="ri-download-2-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio Section -->
+        <section id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner">
+                            <div>
+                                <button class="section-title mt-4  mb-4 d-flex flex-wrap  justify-content-center align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                    <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                      C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                      C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                                    </svg>
+                                    <span class="ms-2">Portfolio</span>
+                                </button> 
+                                <h4 class="title-default fw-bold mt-4 fs-1" data-aos="fade-up">
+                                    Check out my featured projects
+                                </h4> 
+                                <div class="subtitle-default mt-4" data-aos="fade-up" data-aos-easing="linear"
+                                data-aos-duration="1500">
+                                    From crafting responsive layouts to implementing interactive features and designing sleek, modern websites, my portfolio showcases my ability to transform ideas into impactful web experiences. Explore my work and see how I can bring your vision to life.
+                                </div>
+                            </div>
+                            <div class="grid-block mb-4 mt-4">
+                                <div class="container-fluid">
+                                    <div class="button-group">
+                                        <ul class="list-unstyled d-flex flex-wrap mt-4 justify-content-center">
+                                            <li>
+                                                <button class="button-filter active-btn" data-filter=".all">All</button>
+                                            </li>
+                                            <li>
+                                                <button class="button-filter" data-filter=".figma">Figma</button>
+                                            </li>
+                                            <li>
+                                                <button class="button-filter" data-filter=".jQuery">jQuery</button>
+                                            </li>
+                                            <li>
+                                                <button class="button-filter" data-filter=".html">Html/Css</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="row filter-gallery gy-4 mt-2">
+                                        <div class="col-md-6 col-12 all jQuery" data-aos="fade-right" data-aos-easing="linear"
+                                        data-aos-duration="500">
+                                            <div class="block">
+                                                <a href="https://suhani-011.github.io/Admin-panel-website/" target="_blank">
+                                                    <div class="">
+                                                        <img src="./assets/images/portfolio-1.png" alt=""  class="block-img img-fluid">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12 all html" data-aos="fade-left" data-aos-easing="linear"
+                                        data-aos-duration="500">
+                                            <div class="block">
+                                                <a href="https://suhani-011.github.io/Sandbox-1st-website/" target="_blank">
+                                                    <div class="">
+                                                        <img src="./assets/images/portfolio-2.png" alt=""  class="block-img img-fluid">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12 all figma" data-aos="fade-right" data-aos-easing="linear"
+                                        data-aos-duration="500">
+                                            <div class="block">
+                                                <a href="https://suhani-011.github.io/Park-model-website/" target="_blank">
+                                                    <div class="">
+                                                        <img src="./assets/images/portfolio-3.png" alt=""  class="block-img img-fluid">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12 all html" data-aos="fade-left" data-aos-easing="linear"
+                                        data-aos-duration="500">
+                                            <div class="block">
+                                                <a href="https://suhani-011.github.io/Winsoft-website/" target="_blank">
+                                                    <div class="">
+                                                        <img src="./assets/images/portfolio-4.png" alt=""  class="block-img img-fluid">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Me Section -->
+        <section id="aboutme">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner">
+                            <button class="section-title  d-flex flex-wrap my-4 justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                                </svg>
+                                <span class="ms-2">About Me</span>
+                            </button>
+                            <div class="container-fluid " data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="500">
+                                <div class="row gy-4">
+                                    <div class="subtitle-default mt-4 col-lg-7 col-12 ">
+                                        <div>
+                                            <div>
+                                                Hello, I’m Suhani Jain, excited to begin my journey in full-stack development. I’m driven by a passion for learning and thriving in dynamic environments where I can apply my skills to create impactful solutions. I’m seeking entry-level opportunities to collaborate with talented teams, contribute to innovative projects, and grow as a developer.
+                                            </div>
+                                            <button class="btn-default mt-5 mb-3 port-btn">
+                                                <a href="" class="button-link"> 
+                                                    Download CV <i class="ri-download-2-line"></i>
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 ps-5 col-12 aboutsec">
+                                        <div>
+                                            <div class="about-detail pb-2">
+                                                <span class="detail-val">Name</span>
+                                                <h5 class="fw-medium">Suhani Jain</h5>
+                                            </div>
+                                            <div class="about-detail pb-2">
+                                                <span class="detail-val">Phone</span>
+                                                <h5 class="fw-medium">+91 7435064121</h5>
+                                            </div>
+                                            <div class="about-detail pb-2">
+                                                <span class="detail-val">Email</span>
+                                                <h5 class="fw-medium">suhanijain.vds@gmail.com</h5>
+                                            </div>
+                                            <div class="about-detail pb-2">
+                                                <span class="detail-val">Location</span>
+                                                <h5 class="fw-medium">Surat,Gujarat</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="container-fluid">
+                            <div class="row gy-5">
+                                <div class="col-md-6 " data-aos="flip-left"data-aos-easing="linear"
+                                data-aos-duration="500">
+                                    <div class="h-100">
+                                        <div class="banner p-0">
+                                            <div class="card-desc">
+                                                <div class="card-title">
+                                                    Frontend <br>Development
+                                                </div>
+                                                <div class="card-tag d-flex  mt-2 gap-3">
+                                                    <span class="rounded-tag">User Interface(UI)</span>
+                                                    <span class="rounded-tag">Responsive Design</span>
+                                                </div>
+                                                <p class="card-text pt-4">
+                                                    I work with Html , CSS , jQuery and Bootstrap
+                                                </p>
+                                            </div>
+                                            <div class="card-img">
+                                                <img src="./assets/images/front.webp" alt="" width="100%" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" data-aos="flip-right" data-aos-easing="linear"
+                                data-aos-duration="500">
+                                    <div class="h-100">
+                                        <div class="banner p-0">
+                                            <div class="card-desc">
+                                                <div class="card-title">
+                                                    Backend <br>Development
+                                                </div>
+                                                <div class="card-tag d-flex mt-2 gap-3">
+                                                    <span class="rounded-tag">Database</span>
+                                                    <span class="rounded-tag">Authentication</span>
+                                                </div>
+                                                <p class="card-text pt-4">
+                                                    I'll work with C++, Node js , MongoDB and React js.
+                                                </p>
+                                            </div>
+                                            <div class="card-img backend">
+                                                <img src="./assets/images/backend.webp" alt="" width="100%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Resume Section -->
+        <section id="resume">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class=" education mb-5">
+                            <button class="section-title mt-4  mb-4 d-flex flex-wrap  justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                                </svg>
+                                <span class="ms-2">Resume</span>
+                            </button>
+                            <h2 class="color fw-bold mt-4 fs-1 default-font" data-aos="fade-down" data-aos-easing="linear"
+                            data-aos-duration="500"> 
+                                Education & <span class="title-default fs-1">Experience</span>
+                            </h2> 
+                            <div class="timeline my-5 ms-5" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="500">
+                                <div class="timeline-item ms-2 pt-0">
+                                    <span class="degree subtitle-default fs-7">10th Standard (ICSE)</span>
+                                    <h4 class="color mt-1">Metas of Seventh Day Adventist </h4>
+                                </div>
+                                <div class="timeline-item ms-2 ">
+                                    <span class="degree subtitle-default fs-7">12th Standard (CBSE)</span>
+                                    <h4 class="color mt-1">Bhagwan Mahavir International School </h4>
+                                </div>
+                                <div class="timeline-item ms-2 ">
+                                    <span class="degree subtitle-default fs-7">Bachelors of Science in Information Technology (BSc-IT)-1 yr</span>
+                                    <h4 class="color mt-3 mb-0">Auro University</h4>
+                                    <div class="subtitle-default">2023-2024</div>
+                                </div>
+                                <div class="timeline-item ms-2 pb-0">
+                                    <span class="degree subtitle-default fs-7">Bachelors of Science in Information Technology (BSc-IT)-2 & 3 yr</span>
+                                    <h4 class="color mt-3 mb-0">Bhagwan Mahavir University</h4>
+                                    <div class="subtitle-default">2024-2026</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Skill Section -->
+                        <div class=" skill-sec">
+                            <div class=" title-default  text-center mb-4" data-aos="fade-down" data-aos-easing="linear"
+                            data-aos-duration="500">
+                                <h2 class="fw-semibold skill-bg w-100">My Skills</h2>
+                            </div>
+                            <div class="container-fluid" data-aos="zoom-in"
+                            data-aos-anchor-placement="top-bottom" data-aos-easing="linear"
+                            data-aos-duration="1500">
+                                <div class="row d-flex justify-content-center mb-5 gy-4">
+                                    <div class="col-lg-2 col-sm-4 col-6">
+                                        <div class="skill-icon d-flex justify-content-center align-items-center">
+                                            <i class="ri-html5-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-4 col-6">
+                                        <div class="skill-icon d-flex justify-content-center align-items-center">
+                                            <i class="ri-css3-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-4 col-6">
+                                        <div class="skill-icon d-flex justify-content-center align-items-center">
+                                            <i class="ri-javascript-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-4 col-6">
+                                        <div class="skill-icon d-flex justify-content-center align-items-center">
+                                            <i class="ri-bootstrap-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-4 col-6">
+                                        <div class="skill-icon d-flex justify-content-center align-items-center">
+                                            <i class="ri-reactjs-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-sm-4 col-6">
+                                        <div class="skill-icon d-flex justify-content-center align-items-center">
+                                            <i class="ri-database-2-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section -->
+        <section id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner">
+                            <button class="section-title mt-4  mb-4 d-flex flex-wrap  justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                                </svg>
+                                <span class="ms-2">Blogs</span>
+                            </button>
+                            <div class="container-fluid">
+                                <div class="box">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12 p-lg-0 px-5  pt-4" data-aos="zoom-in-right" data-aos-easing="linear"
+                                        data-aos-duration="700">
+                                            <div class="box-img">
+                                                <img src="./assets/images/blog1.webp" alt="" width="100%" height="100%">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12 p-lg-0 px-md-5 px-sm-4 pb-3" data-aos="zoom-in-left" data-aos-easing="linear"
+                                        data-aos-duration="700">
+                                            <div class="box-desc px-4 py-3">
+                                                <div class="box-title fs-4 ">
+                                                    Machine Unlearning: Researchers make AI models ‘forget’ data
+                                                </div>
+                                                <div class="subtitle-default box-content ">
+                                                    <p> Researchers from the Tokyo University of Science (TUS) have developed a method to enable large-scale AI models to selectively “forget” specific classes of data.</p>
+                                                    <p>Progress in AI has provided tools capable of revolutionising various domains, from healthcare to autonomous driving. However, as technology advances, so do its complexities and ethical considerations.The paradigm of large-scale pre-trained AI systems, such as OpenAI’s ChatGPT and CLIP .... </p>   
+                                                </div>
+                                                <button class="box-btn pt-2"><a href="./blog1.html">Read More</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box my-5">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12 p-lg-0 px-5  pt-4" data-aos="zoom-in-right" data-aos-easing="linear"
+                                        data-aos-duration="700">
+                                            <div class="box-img">
+                                                <img src="./assets/images/blogg2.webp" alt="" width="100%" height="100%">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12 p-lg-0 px-md-5 px-sm-4 pb-3" data-aos="zoom-in-left" data-aos-easing="linear"
+                                        data-aos-duration="700">
+                                            <div class="box-desc px-4 py-3">
+                                                <div class="box-title fs-4 ">
+                                                    Study uses AI to interpret American Sign Language in real-time
+                                                </div>
+                                                <div class="subtitle-default box-content ">
+                                                    <p> A study is the first-of-its-kind to recognize American Sign Language (ASL) alphabet gestures using computer vision. Researchers developed a custom dataset of 29,820 static images of ASL hand gestures. Each image was annotated with 21 key landmarks on the hand, providing detailed spatial information about its structure and position.Combining MediaPipe and YOLOv8, a deep learning method they trained, with fine-tuning hyperparameters for the best accuracy....    </p>
+                                                </div>
+                                                <button class="box-btn pt-2"><a href="./blog2.html">Read More</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <button class="section-title mt-4  mb-4 d-flex flex-wrap  justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                                </svg>
+                                <span class="ms-2">Testimonials</span>
+                            </button>
+                            <h2 class=" fw-bold title-default old mt-4 fs-1" data-aos="fade-left" data-aos-easing="linear"
+                            data-aos-duration="500">
+                                Clients Say About Me
+                            </h2>
+                            <!-- Swiper -->
+                            <div class="testimonial-slider mt-5">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide banner py-5" >
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-img d-flex justify-content-center align-items-center">
+                                                    <i class="ri-user-fill"></i>
+                                                </div>
+                                                <div class="user-details ps-4 ">
+                                                    <h4 class="title-default fs-4 mb-0">Anant Shah</h4>
+                                                    <span class="subtitle-default">Mentor</span>
+                                                    <div class="rating d-flex flex-wrap">
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="subtitle-default mt-4 fs-5">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In, repellat consequatur nihil laborum corrupti eveniet qui quisquam, et numquam accusantium maiores cupiditate earum dolorem alias repudiandae similique eum illum autem quis placeat! Sed repellendus eaque error cumque? Iste, autem totam!
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide banner py-5">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-img d-flex justify-content-center align-items-center">
+                                                    <i class="ri-user-fill"></i>
+                                                </div>
+                                                <div class="user-details ps-4 ">
+                                                    <h4 class="title-default fs-4 mb-0">User XXX</h4>
+                                                    <span class="subtitle-default">CEO</span>
+                                                    <div class="rating d-flex flex-wrap">
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="subtitle-default mt-4 fs-5">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In, repellat consequatur nihil laborum corrupti eveniet qui quisquam, et numquam accusantium maiores cupiditate earum dolorem alias repudiandae similique eum illum autem quis placeat! Sed repellendus eaque error cumque? Iste, autem totam!
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide banner py-5">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-img d-flex justify-content-center align-items-center">
+                                                    <i class="ri-user-fill"></i>
+                                                </div>
+                                                <div class="user-details ps-4 ">
+                                                    <h4 class="title-default fs-4 mb-0">USER XXX</h4>
+                                                    <span class="subtitle-default">Manager</span>
+                                                    <div class="rating d-flex flex-wrap">
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                        <i class="ri-star-fill pe-1"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="subtitle-default mt-4 fs-5">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. In, repellat consequatur nihil laborum corrupti eveniet qui quisquam, et numquam accusantium maiores cupiditate earum dolorem alias repudiandae similique eum illum autem quis placeat! Sed repellendus eaque error cumque? Iste, autem totam!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination pb-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <button class="section-title mt-4  mb-4 d-flex flex-wrap  justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                                </svg>
+                                <span class="ms-2">Contact</span>
+                            </button>
+                            <h2 class=" fw-bold color old mt-4 fs-1 default-font mb-4" data-aos="fade-right" data-aos-easing="linear"
+                            data-aos-duration="500">
+                                Let's make something <span class="title-default fs-1"> Awesome</span> together!
+                            </h2>
+                            <div class="banner mt-3">
+                                <div class="container-fluid">
+                                    <h5 class=" fw-bold color mt-4 fs-2 mb-4 text-center"data-aos="fade-up" data-aos-easing="linear"
+                                    data-aos-duration="500">
+                                        Contact <span class="title-default fs-2"> Me</span>
+                                    </h5>
+                                    <div class="row gy-5">
+                                        <div class="col-lg-5 col-12">
+                                            <div class="d-flex flex-column gap-4 h-100">
+                                                <div class="contact-box d-flex align-items-center flex-wrap">
+                                                    <div class="contact-icon pe-4 pb-3">
+                                                        <i class="bi bi-geo-alt"></i>
+                                                    </div>
+                                                    <div class="contact-details ">
+                                                        <h5 class="color fs-5 mb-0 ">Location</h5>
+                                                        <p class="subtitle-default fs-6">Surat,Gujarat</p>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-box d-flex align-items-center">
+                                                    <div class="contact-icon pe-4 pb-3">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </div>
+                                                    <div class="contact-details ">
+                                                        <h5 class="color fs-5 mb-0">E-mail</h5>
+                                                        <p class="subtitle-default fs-6">suhanijain.11@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-box d-flex align-items-center">
+                                                    <div class="contact-icon pe-4 pb-3">
+                                                        <i class="bi bi-telephone-fill"></i>
+                                                    </div>
+                                                    <div class="contact-details ">
+                                                        <h5 class="color  fs-5 mb-0">Phone</h5>
+                                                        <p class="subtitle-default fs-6">+91 7435064121</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-12">
+                                            <div>
+                                                <form>
+                                                    <div class="form-floating mb-3">
+                                                      <input type="text" class="form-control p-0 px-3" placeholder="Full Name" >
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                      <input type="email" class="form-control p-0 px-3" placeholder="Email Address">
+                                                    </div>
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control d-flex p-0 px-3 pt-3" placeholder="Send a message" id="floatingTextarea"></textarea>
+                                                    </div>  
+                                                    <button type="submit" class="btn form-btn mt-4 fw-bolder fw-700">Submit</button>
+                                                  </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+      
+    <!-- slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Popper js -->
+    <script src="./assets/js/popper.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/bootstrap.bundle.js"></script> 
+    <!-- Jquery  -->
+    <script src="./assets/js/jquery.js"></script>
+    <!-- AOS Js -->
+    <script src="./assets/js/aos.js"></script>
+    <!-- Pointer JS -->
+    <script src="./assets/js/pointer.js"></script>
+    <!-- Isotope Js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- Headline JS  -->
+    <script src="./assets/js/headline.js"></script>
+    <!-- Gradient bg -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script src="./assets/js/blob.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".theme").on("click",function(){
+                $("body").toggleClass("light-theme dark-theme");
+                $(this).children("i").toggleClass("bi bi-sun bi bi-moon-stars");
+            })
+            var $grid = $('.filter-gallery').isotope({});
+                // filter items on button click
+                $(".button-group .button-filter").on( 'click', function(){
+                    var filterValue = $(this).attr('data-filter');
+                    $grid.isotope({ filter: filterValue });
+
+                    $(".button-filter").removeClass("active-btn");
+                    $(this).addClass("active-btn");
+                });
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+            //Scrollspy
+            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar-example'
+            })
+        })
+         //Tooltip
+         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        //Animation on scroll
+        AOS.init();
+        //Loader
+        // $(window).on("load",function(){
+        //     $('.loader').delay(1000).fadeOut(1000);
+        //     $('.main-container').delay(1000).fadeIn(2000);
+        // })
+    </script>
+
+</body>
+</html
