@@ -572,6 +572,7 @@ html{
 }
 .menu-fix{ 
     background: var(--control-btn);
+    color: var(--color-black);
     border-radius: 50%;
 }
 .scroll-link{
@@ -585,8 +586,11 @@ html{
 }
 .active{
     background:var(--control-btn);
-    color:var(--color-black) !important;
     border-radius: 50%;
+}
+
+.active i {
+    color: var(--color-black);
 }
 .scrollbtn{
     border-radius: 50%;
@@ -608,14 +612,19 @@ html{
 .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before{
     border-left-color: var(--primary-color);
 }
+body{
+    overflow-x: hidden;
+}
 /* cursor CSS */
 .cursor-dot,
 .cursor-dot-outline {
     pointer-events: none;
     position: absolute;
-    top: 50%;
+    right: 0;
+    height: auto;
+    max-width: 100%;
     z-index: 10000;
-    left: 50%;
+    left:0;
     border-radius: 50%;
     opacity: 0;
     transform: translate(-50%, -50%);

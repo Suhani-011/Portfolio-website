@@ -26,8 +26,10 @@
 </head>
 <body class="dark-theme" data-bs-spy="scroll" data-bs-target="#navbar-example">
     <!-- Custom Cursor -->
-    <div class="cursor-dot-outline"></div>
-    <div class="cursor-dot"></div>
+    <div class="customcursor">
+        <div class="cursor-dot-outline"></div>
+        <div class="cursor-dot"></div>
+    </div>
     <!-- Gradient background -->
     <div class="gradient-background">
         <div class="blur" style="translate: none; rotate: none; scale: none; transform: translate3d(13.138px, 139.101px, 0px) rotate(72.0072deg);"></div>
@@ -95,7 +97,7 @@
         </div>
     </div>
     <!-- Main -->
-    <main class=".main-container">
+    <main class="">
         <!-- Header -->
         <header class="d-flex justify-content-between align-items-center gap-2">
             <div class="header-menus d-xl-block d-none">
@@ -856,11 +858,8 @@
             const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
         //Animation on scroll
         AOS.init();
-        //Loader
-        // $(window).on("load",function(){
-        //     $('.loader').delay(1000).fadeOut(1000);
-        //     $('.main-container').delay(1000).fadeIn(2000);
-        // })
+
+
     </script>
 
 </body>

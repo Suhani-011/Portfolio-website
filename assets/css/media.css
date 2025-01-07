@@ -27,6 +27,12 @@
     .container{
         max-width:1000px;
     }
+    .customcursor{
+        display: none;
+    }
+    *{
+        cursor:default;
+    }
 }
 @media (max-width:992px) {
     .container{
@@ -59,8 +65,13 @@
         padding: 20px 35px;
     }
     .subtitle-default{
-        font-size: 15px !important;
+        font-size: 14px !important;
     }
+    [data-aos] {
+        opacity: 1 !important; /* Ensure elements are visible */
+        transform: none !important; /* Remove any transformations */
+        transition: none !important; /* Disable animation transitions */
+      }
 }
 @media (max-width:400px) {
     .container{
