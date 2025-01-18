@@ -25,11 +25,6 @@
      <link rel="stylesheet" href="./assets/css/media.css">
 </head>
 <body class="dark-theme" data-bs-spy="scroll" data-bs-target="#navbar-example">
-    <!-- Custom Cursor -->
-    <div class="customcursor">
-        <div class="cursor-dot-outline"></div>
-        <div class="cursor-dot"></div>
-    </div>
     <!-- Gradient background -->
     <div class="gradient-background">
         <div class="blur" style="translate: none; rotate: none; scale: none; transform: translate3d(13.138px, 139.101px, 0px) rotate(72.0072deg);"></div>
@@ -55,7 +50,7 @@
                         </svg>
                     </div>
                    </a>
-                    <div class=" logo_name ps-3 ">
+                    <div class=" logo_name ps-3">
                         Suhani <br> Jain
                     </div>
                 </div>
@@ -69,7 +64,7 @@
                     <span>I am a <span id="changingText"></span></span>
                 </h5>
             </div>
-            <div class="avatar-block mt-3 ">
+            <div class="avatar-block mt-3">
                 <h5 class="course">
                     <span class="course_val">Based in:</span>
                     <br>
@@ -77,7 +72,7 @@
             </div>
             <div class="avatar-block mt-3 d-flex flex-wrap gap-4 align-items-center">
                 <h5 class="course"><span class="course_val">Socials:</span></h5>
-                <ul class="socials d-flex flex-wrap gap-4 ">
+                <ul class="socials d-flex flex-wrap gap-4">
                     <li class="social-item"><a href="https://www.linkedin.com/in/suhani-jain11092005/" class="social-link" target="_blank">
                         <i class="ri-linkedin-line"></i>
                     </a></li>
@@ -97,38 +92,38 @@
         </div>
     </div>
     <!-- Main -->
-    <main class="">
+    <main>
         <!-- Header -->
         <header class="d-flex justify-content-between align-items-center gap-2">
             <div class="header-menus d-xl-block d-none">
                 <nav>
                     <ul class="menu-list d-flex gap-3">
-                        <li class=" menu-item  d-flex justify-content-center align-items-center">
+                        <li class="menu-item  d-flex justify-content-center align-items-center">
                             <a href="#home" class="menu-link">
                                 <div class="menus-name d-xxl-block d-none">Home</div>
                                 <i class="bi bi-house d-xxl-none d-xl-block"></i>
                             </a>
                         </li>
-                        <li class=" menu-item  d-flex justify-content-center align-items-center">
-                            <a href="#portfolio" class="menu-link ">
+                        <li class=" menu-item d-flex justify-content-center align-items-center">
+                            <a href="#portfolio" class="menu-link">
                                 <div class="menus-name d-xxl-block d-none">Portfolio</div>
                                 <i class="bi bi-grid d-xxl-none d-xl-block"></i>
                             </a>
                         </li>
                         <li class=" menu-item  d-flex justify-content-center align-items-center">
-                            <a href="#aboutme" class="menu-link ">
+                            <a href="#aboutme" class="menu-link">
                                 <div class="menus-name d-xxl-block d-none">About me</div>
                                 <i class="bi bi-person d-xxl-none d-xl-block"></i>
                             </a>
                         </li>
                         <li class=" menu-item  d-flex justify-content-center align-items-center">
-                            <a href="#resume" class="menu-link ">
+                            <a href="#resume" class="menu-link">
                                 <div class="menus-name d-xxl-block d-none">Resume</div>
                                 <i class="bi bi-card-text d-xxl-none d-xl-block"></i>
                             </a>
                         </li>
                         <li class=" menu-item  d-flex justify-content-center align-items-center">
-                            <a href="#contact" class="menu-link ">
+                            <a href="#contact" class="menu-link">
                                 <div class="menus-name d-xxl-block d-none">Contact</div>
                                 <i class="bi bi-envelope d-xxl-none d-xl-block"></i>
                             </a>
@@ -146,89 +141,81 @@
                 </a>
             </div>
             <!-- scrollspy -->
-            <div id="navbar-example" class="scrollspy position-fixed ">
-                <ul class="nav nav-tabs menu-link scroll-link d-flex" role="tablist">
-                    <a href="#home">
-                        <li class="menu-spy">
-                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
-                            data-bs-custom-class="custom-tooltip"
-                            data-bs-title="Menu">
-                                <i class="bi bi-house"></i>
-                            </button>
-                        </li>
+            <div class="scrollspy position-fixed" tabindex="0">
+                <nav id="navbar-example">
+                    <ul class="nav nav-tabs menu-link scroll-link d-flex" role="tablist">
+                        <a href="#home" class="active">
+                            <li class="menu-spy">
+                                <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="custom-tooltip" data-bs-title="Menu">
+                                    <i class="bi bi-house"></i>
+                                </button>
+                            </li>
                         </a>
-                    <a href="#portfolio">
+                        <a href="#portfolio">
+                            <li class="menu-spy">
+                                <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="custom-tooltip"
+                                data-bs-title="Portfolio">
+                                        <i class="bi bi-grid"></i>
+                                </button>
+                            </li>
+                        </a>
+                        <a href="#aboutme">
+                            <li class="menu-spy">
+                                <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="custom-tooltip"
+                                data-bs-title="About Me">
+                                    <i class="bi bi-person"></i>
+                                </button>
+                            </li>
+                        </a>
+                        <a href="#resume">
+                            <li class="menu-spy">
+                                <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="custom-tooltip"
+                                data-bs-title="Resume">
+                                    <i class="bi bi-card-text"></i>
+                                </button>
+                            </li>
+                        </a>
+                        <a href="#blog">
+                            <li class="menu-spy">
+                                <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="custom-tooltip"
+                                data-bs-title="Blog">
+                                    <i class="bi bi-newspaper"></i>
+                                </button>
+                            </li>
+                        </a>
+                        <a href="#testimonials">
+                            <li class="menu-spy">
+                                <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="custom-tooltip"
+                                data-bs-title="Testimonials">
+                                    <i class="bi bi-star"></i>
+                                </button>
+                            </li>
+                        </a>
+                        <a href="#contact">
+                            <li class="menu-spy">
+                                <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="custom-tooltip"
+                                data-bs-title="Contact">
+                                    <i class="bi bi-envelope"></i>
+                                </button>
+                            </li>
+                        </a>
                         <li class="menu-spy">
-                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
+                            <button type="button" class="btn scrollbtn theme themespy" data-bs-toggle="tooltip" data-bs-placement="left"
                             data-bs-custom-class="custom-tooltip"
-                            data-bs-title="Portfolio">
-                                    <i class="bi bi-grid"></i>
+                            data-bs-title="Theme Switch">
+                                <i class="bi bi-sun"></i>
                             </button>
                         </li>
-                    </a>
-                    <a href="#aboutme">
-                        <li class="menu-spy">
-                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
-                            data-bs-custom-class="custom-tooltip"
-                            data-bs-title="About Me">
-                                <i class="bi bi-person"></i>
-                            </button>
-                        </li>
-                    </a>
-                    <a href="#resume">
-                        <li class="menu-spy">
-                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
-                            data-bs-custom-class="custom-tooltip"
-                            data-bs-title="Resume">
-                                <i class="bi bi-card-text"></i>
-                            </button>
-                        </li>
-                    </a>
-                    <a href="#contact">
-                        <li class="menu-spy">
-                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
-                            data-bs-custom-class="custom-tooltip"
-                            data-bs-title="Contact">
-                                <i class="bi bi-envelope"></i>
-                            </button>
-                        </li>
-                    </a>
-                    <a href="#testimonials">
-                        <li class="menu-spy">
-                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
-                            data-bs-custom-class="custom-tooltip"
-                            data-bs-title="Testimonials">
-                                <i class="bi bi-star"></i>
-                            </button>
-                        </li>
-                    </a>
-                    <a href="#blog">
-                        <li class="menu-spy">
-                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
-                            data-bs-custom-class="custom-tooltip"
-                            data-bs-title="Blog">
-                                <i class="bi bi-newspaper"></i>
-                            </button>
-                        </li>
-                    </a>
-                    <li class="menu-spy">
-                        <button type="button" class="btn scrollbtn theme themespy" data-bs-toggle="tooltip" data-bs-placement="left"
-                        data-bs-custom-class="custom-tooltip"
-                        data-bs-title="Theme Switch">
-                            <i class="bi bi-sun"></i>
-                        </button>
-                    </li>
-                    <a href="#contact">
-                        <li class="menu-spy menu-fix">
-                            <button type="button" class="btn scrollbtn" data-bs-toggle="tooltip" data-bs-placement="left"
-                            data-bs-custom-class="custom-tooltip"
-                            data-bs-title="Connect with me!">
-                                <i class="bi bi-chat-left-dots fw-bolder"></i>
-                            </button>
-                        </li>
-                    </a>
-                </ul>
-              </div>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <!-- Home Section -->
         <section id="home">
@@ -244,7 +231,7 @@
                                 </svg>
                                 <span class="ms-2">Let's meet !</span>
                             </button> 
-                            <h2 class="title-default fw-bold mt-4 " data-aos="fade-up" data-aos-easing="linear"
+                            <h2 class="title-default fw-bold mt-4" data-aos="fade-up" data-aos-easing="linear"
                             data-aos-duration="1500">
                                 I'm Suhani Jain <br>
                                 Frontend Designer and Developer.
@@ -310,8 +297,7 @@
                                         </ul>
                                     </div>
                                     <div class="row filter-gallery gy-4 mt-2">
-                                        <div class="col-md-6 col-12 all jQuery" data-aos="fade-right" data-aos-easing="linear"
-                                        data-aos-duration="500">
+                                        <div class="col-md-6 col-12 all jQuery">
                                             <div class="block">
                                                 <a href="https://suhani-011.github.io/Admin-panel-website/" target="_blank">
                                                     <div class="">
@@ -320,8 +306,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-12 all html" data-aos="fade-left" data-aos-easing="linear"
-                                        data-aos-duration="500">
+                                        <div class="col-md-6 col-12 all html">
                                             <div class="block">
                                                 <a href="https://suhani-011.github.io/Sandbox-1st-website/" target="_blank">
                                                     <div class="">
@@ -330,8 +315,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-12 all figma" data-aos="fade-right" data-aos-easing="linear"
-                                        data-aos-duration="500">
+                                        <div class="col-md-6 col-12 all figma">
                                             <div class="block">
                                                 <a href="https://suhani-011.github.io/Park-model-website/" target="_blank">
                                                     <div class="">
@@ -340,8 +324,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-12 all html" data-aos="fade-left" data-aos-easing="linear"
-                                        data-aos-duration="500">
+                                        <div class="col-md-6 col-12 all html">
                                             <div class="block">
                                                 <a href="https://suhani-011.github.io/Winsoft-website/" target="_blank">
                                                     <div class="">
@@ -372,10 +355,10 @@
                                 </svg>
                                 <span class="ms-2">About Me</span>
                             </button>
-                            <div class="container-fluid " data-aos="fade-up" data-aos-easing="linear"
+                            <div class="container-fluid" data-aos="fade-up" data-aos-easing="linear"
                             data-aos-duration="500">
                                 <div class="row gy-4">
-                                    <div class="subtitle-default mt-4 col-lg-7 col-12 ">
+                                    <div class="subtitle-default mt-4 col-lg-7 col-12">
                                         <div>
                                             <div>
                                                 Hello, I’m Suhani Jain, excited to begin my journey in full-stack development. I’m driven by a passion for learning and thriving in dynamic environments where I can apply my skills to create impactful solutions. I’m seeking entry-level opportunities to collaborate with talented teams, contribute to innovative projects, and grow as a developer.
@@ -418,7 +401,7 @@
                     <div class="col-12 p-0">
                         <div class="container-fluid">
                             <div class="row gy-5">
-                                <div class="col-md-6 " data-aos="flip-left"data-aos-easing="linear"
+                                <div class="col-md-6" data-aos="flip-left"data-aos-easing="linear"
                                 data-aos-duration="500">
                                     <div class="h-100">
                                         <div class="banner p-0">
@@ -492,11 +475,11 @@
                                     <span class="degree subtitle-default fs-7">10th Standard (ICSE)</span>
                                     <h4 class="color mt-1">Metas of Seventh Day Adventist </h4>
                                 </div>
-                                <div class="timeline-item ms-2 ">
+                                <div class="timeline-item ms-2">
                                     <span class="degree subtitle-default fs-7">12th Standard (CBSE)</span>
                                     <h4 class="color mt-1">Bhagwan Mahavir International School </h4>
                                 </div>
-                                <div class="timeline-item ms-2 ">
+                                <div class="timeline-item ms-2">
                                     <span class="degree subtitle-default fs-7">Bachelors of Science in Information Technology (BSc-IT)-1 yr</span>
                                     <h4 class="color mt-3 mb-0">Auro University</h4>
                                     <div class="subtitle-default">2023-2024</div>
@@ -581,10 +564,10 @@
                                         <div class="col-lg-6 col-12 p-lg-0 px-md-5 px-sm-4 pb-3" data-aos="zoom-in-left" data-aos-easing="linear"
                                         data-aos-duration="700">
                                             <div class="box-desc px-4 py-3">
-                                                <div class="box-title fs-4 ">
+                                                <div class="box-title fs-4">
                                                     Machine Unlearning: Researchers make AI models ‘forget’ data
                                                 </div>
-                                                <div class="subtitle-default box-content ">
+                                                <div class="subtitle-default box-content">
                                                     <p> Researchers from the Tokyo University of Science (TUS) have developed a method to enable large-scale AI models to selectively “forget” specific classes of data.</p>
                                                     <p>Progress in AI has provided tools capable of revolutionising various domains, from healthcare to autonomous driving. However, as technology advances, so do its complexities and ethical considerations.The paradigm of large-scale pre-trained AI systems, such as OpenAI’s ChatGPT and CLIP .... </p>   
                                                 </div>
@@ -604,10 +587,10 @@
                                         <div class="col-lg-6 col-12 p-lg-0 px-md-5 px-sm-4 pb-3" data-aos="zoom-in-left" data-aos-easing="linear"
                                         data-aos-duration="700">
                                             <div class="box-desc px-4 py-3">
-                                                <div class="box-title fs-4 ">
+                                                <div class="box-title fs-4">
                                                     Study uses AI to interpret American Sign Language in real-time
                                                 </div>
-                                                <div class="subtitle-default box-content ">
+                                                <div class="subtitle-default box-content">
                                                     <p> A study is the first-of-its-kind to recognize American Sign Language (ASL) alphabet gestures using computer vision. Researchers developed a custom dataset of 29,820 static images of ASL hand gestures. Each image was annotated with 21 key landmarks on the hand, providing detailed spatial information about its structure and position.Combining MediaPipe and YOLOv8, a deep learning method they trained, with fine-tuning hyperparameters for the best accuracy....    </p>
                                                 </div>
                                                 <button class="box-btn pt-2"><a href="./blog2.html">Read More</a></button>
@@ -623,10 +606,10 @@
             </div>
         </section>
         <!-- Testimonials Section -->
-        <section id="testimonials">
+        <section id="testimonials" class="overflow-hidden">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 overflow-hidden">
                         <div>
                             <button class="section-title mt-4  mb-4 d-flex flex-wrap  justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
@@ -649,7 +632,7 @@
                                                 <div class="user-img d-flex justify-content-center align-items-center">
                                                     <i class="ri-user-fill"></i>
                                                 </div>
-                                                <div class="user-details ps-4 ">
+                                                <div class="user-details ps-4">
                                                     <h4 class="title-default fs-4 mb-0">Anant Shah</h4>
                                                     <span class="subtitle-default">Mentor</span>
                                                     <div class="rating d-flex flex-wrap">
@@ -670,7 +653,7 @@
                                                 <div class="user-img d-flex justify-content-center align-items-center">
                                                     <i class="ri-user-fill"></i>
                                                 </div>
-                                                <div class="user-details ps-4 ">
+                                                <div class="user-details ps-4">
                                                     <h4 class="title-default fs-4 mb-0">User XXX</h4>
                                                     <span class="subtitle-default">CEO</span>
                                                     <div class="rating d-flex flex-wrap">
@@ -691,7 +674,7 @@
                                                 <div class="user-img d-flex justify-content-center align-items-center">
                                                     <i class="ri-user-fill"></i>
                                                 </div>
-                                                <div class="user-details ps-4 ">
+                                                <div class="user-details ps-4">
                                                     <h4 class="title-default fs-4 mb-0">USER XXX</h4>
                                                     <span class="subtitle-default">Manager</span>
                                                     <div class="rating d-flex flex-wrap">
@@ -747,8 +730,8 @@
                                                     <div class="contact-icon pe-4 pb-3">
                                                         <i class="bi bi-geo-alt"></i>
                                                     </div>
-                                                    <div class="contact-details ">
-                                                        <h5 class="color fs-5 mb-0 ">Location</h5>
+                                                    <div class="contact-details">
+                                                        <h5 class="color fs-5 mb-0">Location</h5>
                                                         <p class="subtitle-default fs-6">Surat,Gujarat</p>
                                                     </div>
                                                 </div>
@@ -756,7 +739,7 @@
                                                     <div class="contact-icon pe-4 pb-3">
                                                         <i class="bi bi-envelope"></i>
                                                     </div>
-                                                    <div class="contact-details ">
+                                                    <div class="contact-details">
                                                         <h5 class="color fs-5 mb-0">E-mail</h5>
                                                         <p class="subtitle-default fs-6">suhanijain.11@gmail.com</p>
                                                     </div>
@@ -765,7 +748,7 @@
                                                     <div class="contact-icon pe-4 pb-3">
                                                         <i class="bi bi-telephone-fill"></i>
                                                     </div>
-                                                    <div class="contact-details ">
+                                                    <div class="contact-details">
                                                         <h5 class="color  fs-5 mb-0">Phone</h5>
                                                         <p class="subtitle-default fs-6">+91 7435064121</p>
                                                     </div>
@@ -798,18 +781,16 @@
         </section>
     </main>
       
-    <!-- slider -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Jquery  -->
+    <script src="./assets/js/jquery.js"></script>
     <!-- Popper js -->
     <script src="./assets/js/popper.js"></script>
     <!-- Bootstrap JS -->
     <script src="./assets/js/bootstrap.bundle.js"></script> 
-    <!-- Jquery  -->
-    <script src="./assets/js/jquery.js"></script>
+    <!-- slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- AOS Js -->
     <script src="./assets/js/aos.js"></script>
-    <!-- Pointer JS -->
-    <script src="./assets/js/pointer.js"></script>
     <!-- Isotope Js -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <!-- Headline JS  -->
@@ -840,18 +821,14 @@
                     disableOnInteraction: false,
                 },
                 pagination: {
-                    el: ".swiper-pagination",
+                    el:".swiper-pagination",
                     clickable: true,
                 },
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    nextEl:".swiper-button-next",
+                    prevEl:".swiper-button-prev",
                 },
             });
-            //Scrollspy
-            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-            target: '#navbar-example'
-            })
         })
          //Tooltip
          const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')

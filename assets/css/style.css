@@ -1,7 +1,6 @@
 *{
     list-style: none;
     text-decoration: none;
-    cursor: none;
     font-family: "Syne", serif;
 }
 ul,ol{
@@ -72,7 +71,8 @@ body{
     font-weight: 700;
     font-size: 20px;
     white-space: nowrap;
-    color: var(--header-btn);
+    /* color: var(--header-btn); */
+    color: var(--color-white);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border: 1px solid transparent;
@@ -83,7 +83,7 @@ body{
     -webkit-backdrop-filter: blur(8.8px);
 }
 .menu-item:hover .menu-link{
-    color: var(--color-white);
+    box-shadow: 0px 0px 10px #39393a7d;
 }
 .theme{
     color: var(--header-btn);
@@ -133,7 +133,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
     z-index: 2;
@@ -181,7 +181,7 @@ main{
     left: 50px;
     height: calc(100% - 6rem);
     width: 400px;
-    z-index: 1200;
+    z-index: 500;
 }
 .avatar-container{
     padding:30px 45px;
@@ -568,7 +568,7 @@ html{
     transition: all linear 0.3s;
 }
 .menu-spy:hover .scrollbtn{
-    color: var(--color-black);
+    color: var(--color-white);
 }
 .menu-fix{ 
     background: var(--control-btn);
@@ -588,7 +588,9 @@ html{
     background:var(--control-btn);
     border-radius: 50%;
 }
-
+.themespy:active{
+    background: var(--control-btn);
+}
 .active i {
     color: var(--color-black);
 }
@@ -603,6 +605,7 @@ html{
 .scrollspy{
     right:30px;
     top: 35%;
+    z-index:800 !important;
 }
 /* Tooltip CSS */
 .tooltip-inner{
@@ -611,35 +614,6 @@ html{
 }
 .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before{
     border-left-color: var(--primary-color);
-}
-body{
-    overflow-x: hidden;
-}
-/* cursor CSS */
-.cursor-dot,
-.cursor-dot-outline {
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    height: auto;
-    max-width: 100%;
-    z-index: 10000;
-    left:0;
-    border-radius: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease-in-out,
-                transform 0.3s ease-in-out;
-}
-.cursor-dot {
-    width: 10px;
-    height: 10px;
-    background:var(--control-btn);
-}
-.cursor-dot-outline {
-    width: 30px;
-    height: 30px;
-    background-color:rgba(107, 105, 105, 0.371);
 }
 /* Blog CSS */
 .blog-img img{
